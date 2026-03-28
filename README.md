@@ -1,8 +1,9 @@
 ## Data-Bootcamp-midterm-project
 
-# See .ipynb for codes and .pdf for writeup with images
+See .ipynb for codes and .pdf for writeup with images
 
 Xiyue Dai xd2285
+
 Yuxin Bai yb2464
 
 ## Introduction
