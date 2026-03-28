@@ -1,5 +1,5 @@
 ## Data-Bootcamp-midterm-project
-see .ipynb for codes and .pdf for writup with images
+see .ipynb for codes and .pdf for writeup with images
 ## Introduction
 
 In this project we aim to identify promising restaurant segments in Manhattan, where "promising" refers to stronger consumer appeal and more stable operational performance rather than guaranteed profitability, and ‘restaurant segments’ refers to separating restaurants by cuisine type. 
