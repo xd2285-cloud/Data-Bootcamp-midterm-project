@@ -1,4 +1,4 @@
-## Data-Bootcamp-midterm-project
+# Data-Bootcamp-midterm-project
 
 See .ipynb for codes and .pdf for writeup with images
 
@@ -10,7 +10,7 @@ Xiyue Dai xd2285
 
 Yuxin Bai yb2464
 
-## Introduction
+# Introduction
 
 In this project, we aim to identify promising restaurant segments in Manhattan, where "promising" refers to stronger consumer appeal and more stable operational performance rather than guaranteed profitability, and ‘restaurant segments’ refers to separating restaurants by cuisine type. 
 
@@ -20,7 +20,7 @@ The second is from NYC Open Data's DOHMH Restaurant Inspection Results, which co
 These two datasets approach the same landscape from opposite angles — one reflecting how customers perceive a restaurant, the other representing how regulators evaluate it. 
 
 
-## Data Acquirement and Cleaning
+# Data Acquirement and Cleaning
 
 
 For the first data source, because Yelp’s search API can only return a limited and somewhat popularity-biased set of results, we did not rely on a single search term.
@@ -36,7 +36,7 @@ Furthermore, when checking missing values, we found that only the ‘price level
 For the NYC open dataset, we dropped clearly unusable rows, such as cuisine_description, and then aggregated violations from the same restaurant into one row, reducing the data to the latest inspection at the restaurant level. After this aggregation step, we had 9,308 restaurant-level inspection records.
 
 
-## EDA Analysis
+# EDA Analysis
 
 We first research the Yelp dataset, using the ‘rating’ feature as our indicator of promising and success. 
 Our analysis started with an overview of  Manhattan’s overall market structure. 
@@ -74,14 +74,14 @@ It’s noticeable that the most common violation categories include sanitation a
 
 Our key finding from the project is that the “promising” restaurant segment may vary depending on different criteria, such as the goal of lower-risk operational consistency or higher-upside consumer demand.
 
-## Extra Research Question Analysis
+# Extra Research Question Analysis
 To increase the depth of our research, we also think of another four questions that we’re interested in
 
-# Correlation Analysis
+## Correlation Analysis
 
 To get a brief idea of how Yelp variables correlate with each other, we create a correlation matrix, which shows that all factors have only weak correlations with ‘rating’, ranging from -0.13 to 0.10. However, the limitation is that the matrix only captures linear relationships; thus, we cannot directly conclude that ‘rating’ is irrelevant to other factors.
 
-# Zip Code with Success (potential cuisine gap)
+## Zip Code with Success (potential cuisine gap)
 
 
 By combining restaurant numbers, average ratings, and average review counts, we identified the top 5 Zipcodes in Manhattan for further cuisine analysis: 10002, 10007, 10009, 10014, and 10029. 
@@ -90,7 +90,7 @@ Then we generate two heatmaps above, which examine how the spread of restaurants
 
 The rating heatmap adds an important layer — high restaurant counts do not always correspond to high ratings. Japanese restaurants in 10009 achieved an exceptional average of 4.8 despite having only 2 establishments, while Sushi Bars in 10014 averaged 4.7 with 4 restaurants. Desserts and Izakaya in 10002 both average 4.6, yet appear only once or twice in the count heatmap. This divergence between density and quality points to potential market gaps — cuisines that are both highly rated and underrepresented in a given ZIP code may represent untapped investment opportunities.
 
-# Better Cuisine within Same Price Level
+## Better Cuisine within Same Price Level
 
 To further refine the investment lens, we try to break down the top-performing cuisines within each price tier, researching which cuisine types achieve the highest ratings within the same price level.
 
@@ -104,14 +104,14 @@ At the highest tier, Price Level 4, only four cuisines appear with sufficient da
 
 Taken together, these charts suggest that the most resilient cuisine choices — those that perform well across multiple price tiers — are Korean and Italian. At the same time, Ramen and Cafes represent strong opportunities within their respective budget segments.
 
-# Common Dishes in Highly Rated Cuisines
+## Common Dishes in Highly Rated Cuisines
 
 
 We think another useful extension of this project was our analysis of common dish patterns in highly rated cuisines using TheMealDB API. This was not the core of the project, but we came up with this idea while thinking about the menus for these "promising" cuisine types. So we insert another API and search for dishes that appear frequently across the top five-rated cuisine types.
 
 For example, Thai dishes are often centered on curry, noodles, soups, and stir-fries. Japanese dishes highlighted sushi, teriyaki, katsu, and udon-style meals. Italian dish terms often emphasized pasta-related items such as spaghetti, alfredo, ricotta, and linguine. Mexican patterns were tied to tacos, enchiladas, and fajitas. This supports the idea that strong cuisines are not just abstract labels; they are often built around recognizable signature dishes that shape consumer expectations and demand.
 
-## Summary
+# Summary
 
 Overall, our final conclusion is that there is no single universally “best” restaurant segment in Manhattan. Instead, the answer depends on what we mean by promising. If we care more about safer and more stable segments, then coffee shops, cafes, bakeries, and lighter-service concepts look especially attractive because they combine decent consumer appeal with relatively manageable operational risk. If we care more about higher upside and stronger consumer excitement, then Italian, Japanese/Sushi Bars, Korean, Ramen, and Thai look more compelling, especially in strong local markets. Among them, Italian is probably the most balanced example of a high-performing cuisine with a convincing sample size.
 
