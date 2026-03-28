@@ -2,6 +2,10 @@
 
 See .ipynb for codes and .pdf for writeup with images
 
+https://colab.research.google.com/drive/1hRZSUXinXiyRoZJBJg792PgEKg74pmXq?usp=sharing
+
+https://docs.google.com/document/d/193LODZntY_3uJ9Zsx9z9wyThW8vcz_0cP2uqWA2R4Vw/edit?usp=sharing
+
 Xiyue Dai xd2285
 
 Yuxin Bai yb2464
